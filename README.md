@@ -1,3 +1,5 @@
+ATTENTION: This is a branch of sbt-condep-plugin providing artifacts build from the master branch (1.2-SNAPHSHOT) for sbt 0.11.x and scala 2.9.1. This is not the original github repository, which you find at https://github.com/samskivert/sbt-condep-plugin.
+
 sbt-condep-plugin
 =================
 
@@ -15,12 +17,15 @@ Usage
 
 Add the plugin to `project/plugins/build.sbt`:
 
-    resolvers += "Condep repo" at "http://samskivert.github.com/sbt-condep-plugin/maven"
+    resolvers += "Condep repo" at "http://kodemaniak.github.com/sbt-condep-plugin/maven"
 
-    libraryDependencies += "com.samskivert" %% "sbt-condep-plugin" % "1.0"
+    addSbtPlugin("com.samskivert" %% "sbt-condep-plugin" % "1.2-SNAPSHOT"
 
 In your `project/Build.scala` file, declare and use your conditional
 dependencies like so:
+ 
+    import sbt._
+    import Keys._
 
     object MyProjBuild extends Build {
       val condeps = com.samskivert.condep.Depends(
