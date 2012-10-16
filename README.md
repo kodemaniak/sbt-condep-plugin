@@ -1,4 +1,4 @@
-ATTENTION: This is a branch of sbt-condep-plugin providing artifacts build from the master branch (1.2-SNAPHSHOT) for sbt 0.11.x and scala 2.9.1. This is not the original github repository, which you find at https://github.com/samskivert/sbt-condep-plugin.
+ATTENTION: This is a branch of sbt-condep-plugin providing artifacts build from the master branch (1.2-SNAPHSHOT) for sbt 0.11.x and 0.12 and scala 2.9.1. This is not the original github repository, which you find at https://github.com/samskivert/sbt-condep-plugin.
 
 sbt-condep-plugin
 =================
